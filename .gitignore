@@ -1,8 +1,16 @@
-*logs*
-logs
-logs/*
-__pycache__
-*__pycache__*
-*/__pycache__*
-artifacts
-textSummarizer.egg-info
+# Ignore logs directory
+logs/
+
+# Ignore __pycache__ directories and compiled Python files
+__pycache__/
+*.pyc
+
+# Ignore artifacts directory
+artifacts/
+
+# Ignore textSummarizer egg-info
+textSummarizer.egg-info/
+
+# Ignore specific files
+logs/running_logs.log
+src/textSummarizer/__pycache__/__init__.cpython-310.pyc
