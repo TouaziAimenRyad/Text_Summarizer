@@ -1,4 +1,17 @@
 
+# Text Summarization Pipeline with FastAPI and Transformers
+
+**Overview:**
+This project implements a robust text summarization pipeline using FastAPI and Hugging Face Transformers. It includes stages for data ingestion, validation, transformation, and model training based on the Pegasus architecture. The FastAPI web application provides endpoints for training the model and making predictions.
+
+**Key Features:**
+- FastAPI-powered web application for easy integration.
+- Modular pipeline design for organized data handling and model tasks.
+- Configuration management using YAML files for parameter customization.
+- Data handling stages for ingestion, validation, and transformation.
+- Text summarization model training and evaluation with ROUGE metrics.
+
+
 ### Project Structure:
 
 1. **app.py**: FastAPI application for serving the model predictions and providing an endpoint for training.
