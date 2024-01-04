@@ -14,7 +14,7 @@ class DataIngestion:
     
     def download_file(self):
         if not os.path.exists(self.config.local_data_file):
-            gdown.download(self.config.source_URL, output=self.config.local_data_file, quiet=False)
+            gdown.download(self.config.source_URL, output=self.config.local_data_file, quiet=False,fuzzy=True)
             logger.info(f"File downloaded to: {self.config.local_data_file}")
         else:
             logger.info(f"File already exists of size: {get_size(Path(self.config.local_data_file))}")
